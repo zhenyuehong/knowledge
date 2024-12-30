@@ -64,5 +64,6 @@ func InitConfig() (*viper.Viper, error) {
 	if err := v.Unmarshal(&Conf); err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println(fmt.Sprintf("Conf:%v", Conf))
 	return v, nil
 }

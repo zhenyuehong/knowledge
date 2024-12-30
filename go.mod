@@ -1,10 +1,10 @@
 module github.com/yann0917/knowledge
 
-go 1.19
+go 1.23.3
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.1
-	github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.0
+	github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.3
 	github.com/fsnotify/fsnotify v1.6.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-resty/resty/v2 v2.7.0

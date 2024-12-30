@@ -12,7 +12,7 @@ type Group struct {
 	GroupID     int64         `json:"group_id"`
 	Name        string        `json:"name"`
 	Description string        `json:"description"`
-	CreatedTime time.Time     `json:"created_time"`
+	CreatedTime *time.Time    `json:"created_time"`
 	CreatedAt   base.JSONTime `json:"created_at"`
 	UpdatedAt   base.JSONTime `json:"updated_at"`
 	DeletedAt   base.JSONTime `json:"-"`
