@@ -2763,7 +2763,7 @@ textarea {
     }
 }
 	</style>
-<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"></script>
+<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script>window.onload = function () { twemoji.parse(document.body);}</script>
 </head>
 <body>
