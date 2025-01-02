@@ -41,7 +41,7 @@ func GenPdf(buf *bytes.Buffer, fileName string) (err error) {
 
 	err = pdfg.Create()
 	if err != nil {
-		fmt.Printf("pdfg create err: %#v\n", err)
+		fmt.Printf("pdfg create err: %+v\n", err)
 		return
 	}
 
