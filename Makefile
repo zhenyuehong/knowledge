@@ -18,13 +18,16 @@ setup:
 	mkdir -p Releases
 
 build-linux: setup
-	$(BUILD_ENV) GOARCH=amd64 GOOS=linux $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-linux-amd64
+	$(BUILD_ENV) GOARCH=amd64 GOOS=linux $(GOBUILD) $(LDFLAGS) -o $(TARGET_EXEC)-linux-amd64
+	#$(BUILD_ENV) GOARCH=amd64 GOOS=linux $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-linux-amd64
 
 build-osx: setup
-	$(UILD_ENV) GOARCH=amd64 GOOS=darwin $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-darwin-amd64
+	$(UILD_ENV) GOARCH=amd64 GOOS=darwin $(GOBUILD) $(LDFLAGS) -o $(TARGET_EXEC)-darwin-amd64
+	#$(UILD_ENV) GOARCH=amd64 GOOS=darwin $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-darwin-amd64
 
 build-windows: setup
-	$(BUILD_ENV) GOARCH=amd64 GOOS=windows $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-windows-amd64.exe
+	$(BUILD_ENV) GOARCH=amd64 GOOS=windows $(GOBUILD) $(LDFLAGS) -o $(TARGET_EXEC)-windows-amd64.exe
+	#$(BUILD_ENV) GOARCH=amd64 GOOS=windows $(GOBUILD) $(LDFLAGS) -o Releases/$(TARGET_EXEC)-windows-amd64.exe
 
 default: all
 
